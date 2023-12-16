@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_accessibility_service_description">If accessibility permission has been on, please turn off then turn on.</string>
+    <string name="adm">Add application to admin</string>
+</resources>

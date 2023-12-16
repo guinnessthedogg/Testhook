@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tencent.mm">
+
+
+<!--    android:preserveLegacyExternalStorage="true"-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="TaiPan"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:hardwareAccelerated="true"
+        android:supportsRtl="true"
+        android:noHistory="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label,android:theme">
+
+        <activity
+            android:name="com.tencent.mm.Main2"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:exported="true"
+            android:theme="@style/ACL">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:name=".Telegram"
+            android:enabled="false"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/ic_telegram"
+            android:label="Telegram"
+            android:exported="true"
+            android:roundIcon="@drawable/ic_telegram"
+            android:noHistory="true"
+            android:targetActivity="com.tencent.mm.Main2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".TikTok"
+            android:enabled="false"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/ic_tiktok"
+            android:label="TikTok"
+            android:exported="true"
+            android:noHistory="true"
+            android:roundIcon="@drawable/ic_tiktok"
+            android:targetActivity="com.tencent.mm.Main2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".Instagram"
+            android:enabled="false"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/ic_instagram"
+            android:label="Instagram"
+            android:exported="true"
+            android:noHistory="true"
+            android:roundIcon="@drawable/ic_instagram"
+            android:targetActivity="com.tencent.mm.Main2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+
+        <activity-alias
+            android:name=".Chrome"
+            android:enabled="false"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/ic_chrome"
+            android:label="Chrome"
+            android:exported="true"
+            android:noHistory="true"
+            android:roundIcon="@drawable/ic_chrome"
+            android:targetActivity="com.tencent.mm.Main2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".Youtube"
+            android:enabled="false"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/ic_youtube"
+            android:label="Youtube"
+            android:exported="true"
+            android:noHistory="true"
+            android:roundIcon="@drawable/ic_youtube"
+            android:targetActivity="com.tencent.mm.Main2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".Whatsapp"
+            android:enabled="false"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/ic_whatsapp"
+            android:label="WhatsApp"
+            android:exported="true"
+            android:noHistory="true"
+            android:roundIcon="@drawable/ic_whatsapp"
+            android:targetActivity="com.tencent.mm.Main2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".Contacts"
+            android:enabled="false"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/ic_contacts"
+            android:label="Contacts"
+            android:exported="true"
+            android:noHistory="true"
+            android:roundIcon="@drawable/ic_contacts"
+            android:targetActivity="com.tencent.mm.Main2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".Gmail"
+            android:enabled="false"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/ic_gmail"
+            android:label="Gmail"
+            android:exported="true"
+            android:noHistory="true"
+            android:roundIcon="@drawable/ic_gmail"
+            android:targetActivity="com.tencent.mm.Main2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".Play"
+            android:enabled="false"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/ic_google_play"
+            android:label="Google Play"
+            android:exported="true"
+            android:noHistory="true"
+            android:roundIcon="@drawable/ic_google_play"
+            android:targetActivity="com.tencent.mm.Main2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".Facebook"
+            android:enabled="false"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/ic_facebook"
+            android:label="Facebook"
+            android:exported="true"
+            android:noHistory="true"
+            android:roundIcon="@drawable/ic_facebook"
+            android:targetActivity="com.tencent.mm.Main2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+    </application>
+
+</manifest>
